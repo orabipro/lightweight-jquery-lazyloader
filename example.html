@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    section{
+      min-height: 100vh;
+    }
+    section:nth-child(even){
+      background: black;
+    }
+  </style>
+</head>
+<body>
+  
+  <section>
+    
+  </section>
+
+  <section class="lazy-load" data-lazyload="https://placeimg.com/1920/1080" data-lazyload-css="true"></section>
+
+  <section>
+    <!-- <img data-lazyload="https://placeimg.com/1920/1080" alt="" class="lazy-load" style="max-width: 100%;"> -->
+  </section>
+
+  <script src="dist/lwc-lazyloader.js"></script>
+  <script>
+    $('html').lwcLazyLoad({
+      selector: '.lazy-load',
+      dataSelector: 'data-lazyload',
+      dataLoadedSelector: 'data-lazyloaded',
+      dataCSSSelector: 'data-lazyload-css',
+      onElementLoad: function(el) {
+        // ...code
+      },
+      onElementLoaded: function(el) {
+        // ...code
+      }
+    });
+  </script>
+</body>
+</html>

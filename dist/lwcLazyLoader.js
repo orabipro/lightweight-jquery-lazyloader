@@ -1,6 +1,6 @@
 /**
  * @author codingsamuel
- * @version 1.0.0
+ * @version 1.0.1
  * @license MIT
  * @copyright codingsamuel 2019
  */
@@ -98,7 +98,7 @@ class LwcLazyLoader {
           let id = this.rndId(5);
           el.append(`<img id="lwcLazyLoader${id}" src="" style="display:none;">`);
           $(`#lwcLazyLoader${id}`).attr('src', src).on('load', (e) => {
-            e.currentTarget.remove();
+            $(e.currentTarget).remove();
             el.css('background-image', `url(${src})`);
             
             if (config.onElementLoaded)

@@ -4,11 +4,11 @@ A very lightweight jquery lazy loader with customizeable settings and callbacks
 
 ## Version
 
-The latest version is 1.0.0
+The latest version is 1.0.1
 
 ## Demo
 
-[See how this library works](https://www.google.com)
+[See how this library works](https://cdn.moutinho.org/lightweight-jquery-lazyloader/example.html)
 
 ## Implementation
 
@@ -91,6 +91,10 @@ Make sure to implement JQuery first before the Lightweight JQuery LazyLoader lib
 * Internet Explorer
 
 ## Changelog
+
+### 1.0.1
+
+* Fix internet Explorer
 
 ### 1.0.0
 

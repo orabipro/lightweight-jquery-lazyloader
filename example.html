@@ -25,16 +25,16 @@
 <body>
   
   <section>
-    
+    <h1>Scroll down to load the images</h1>
   </section>
 
-  <section class="lazy-load" data-lazyload="https://placeimg.com/1920/1080" data-lazyload-css="true"></section>
+  <section class="lazy-load" data-lazyload="https://placeimg.com/1920/1080/Animals" data-lazyload-css="true"></section>
 
   <section>
-    <!-- <img data-lazyload="https://placeimg.com/1920/1080" alt="" class="lazy-load" style="max-width: 100%;"> -->
+    <img data-lazyload="https://placeimg.com/1920/1080" alt="" class="lazy-load" style="max-width: 100%;">
   </section>
 
-  <script src="dist/lwc-lazyloader.js"></script>
+  <script src="dist/lwcLazyLoader.min.js"></script>
   <script>
     $('html').lwcLazyLoad({
       selector: '.lazy-load',
